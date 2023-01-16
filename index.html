@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  
+
+ 
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <a href="" ><img class="logo" src="./assets/images/logo.svg" alt=""></a>
+      <nav>
+
+        <svg class="close" width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2.919 0.296997L31.203 28.581L29.081 30.703L0.796997 2.419L2.919 0.296997Z" fill="#00001A"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.796997 28.581L29.081 0.296997L31.203 2.419L2.919 30.703L0.796997 28.581Z" fill="#00001A"/>
+          </svg>
+          
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+
+
+        <svg class="menu" width="35" height="15" viewBox="0 0 40 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_3_8)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H40V3H0V0ZM0 7H40V10H0V7ZM0 14H40V17H0V14Z" fill="#00001A"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H40V3H0V0Z" fill="#00001A"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_3_8">
+          <rect width="40" height="17" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>  
+        
+    </header>
+
+    <section class="hero">
+      
+        <img class="image-desktop" src="./assets/images/image-web-3-desktop.jpg" alt="">
+        <img class="image-mobile" src="./assets/images/image-web-3-mobile.jpg" alt="">
+        <h1 class="c2">The Bright <br> Future of Web <br> 3.0?</h1>
+        <div class="c3">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?</p>
+          <button>Read More</button>
+        </div> 
+      
+
+      <div class="c4">
+        <h2>New</h2>
+        <div>
+           <a href=""><h3>Hydrogen VS Electric Cars</h3></a>
+          <p>Will hydrogen cars-fueled cars ever catch up to EVs?</p>
+          <hr>
+        </div>
+        <div>
+           <a href=""><h3>The Downsides of AI Artistry</h3></a> 
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          <hr>
+        </div>
+        <div>
+           <a href=""> <h3> Is VC Funding Drying Up?</h3></a>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          
+        </div>
+        
+
+      </div>
+
+    </section>
+
+<!-- more info and items -->
+
+    <section class="more-info">
+      <div class="item">
+        <img class="item-img" src="./assets/images/image-retro-pcs.jpg" alt="">
+        <div class="item-info">
+          <h4>01</h4>
+          <a href="#">Reviving Retro PCs</a>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img class="item-img" src="./assets/images/image-top-laptops.jpg" alt="">
+        <div class="item-info">
+          <h4>02</h4>
+          <a href="#"> Top 10 Laptops of 2022 </a>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img class="item-img" src="./assets/images/image-gaming-growth.jpg" alt="">
+        <div class="item-info">
+          <h4>03</h4>
+          <a href="#">The Growth of Gaming</a>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+      
+
+    </section>
+  </div>
+  
+
+  
+  
+
+  
+  <script>    
+  
+            const menu = document.querySelector('.menu')
+            const close = document.querySelector('.close')
+            const nav = document.querySelector('nav')
+
+            menu.addEventListener('click', () => {
+                nav.classList.add('open-nav')
+            })
+
+            close.addEventListener('click', () => {
+                nav.classList.remove('open-nav')
+            })
+
+  </script>
+
+
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
